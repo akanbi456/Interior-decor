@@ -1,22 +1,62 @@
 export const Categories= [
     {
-        name:"Living room",
-        Link :'/living-room'
+        name:"Anchor",
+        Link :'/ancor'
     },
     {
-        name:"Bedroom",
-        Link :'/Bedroom'
+        name:"Wine holder",
+        Link :'/wine'
     },
     {
-        name:"Kitchen",
-        Link :'/living-room'
+        name:"Kaws & German",
+        Link :'/kaw'
     },
     {
-        name: "Bathroom",
-        Link :'/living-room'
+        name: "Dancing couple",
+        Link :'/couple'
     },
     {
-        name:"Living room",
-        Link :'/living-room'
+        name:"wall frame",
+        Link :'/frames'
+    },
+    {
+        name:"Mirrors",
+        Link :'/frames'
+    },
+    {
+        name:"Wall clock",
+        Link :'/clock'
+    },
+    {
+        name:"Side stool",
+        Link :'/stool'
+    },
+    {
+        name:"Center Table",
+        Link :'/table'
+    },
+    {
+        name:" Socket and Switch",
+        Link :'/switch'
+    },
+        {
+        name:" Windows Blinds",
+        Link :'/switch'
+    },
+        {
+        name:" Crystal led chandelier",
+        Link :'/crystal'
+    },
+        {
+        name:" Wall light",
+        Link :'/lights'
+    },
+        {
+        name:" LED Ceiling light",
+        Link :'/led'
+    },
+        {
+        name:" Chandeliers",
+        Link :'/lier'
     },
 ]
