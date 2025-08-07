@@ -6,6 +6,9 @@ import Decor from '../Bedroom pic/Kitchen/Decor.jpg'
 import Ceramic from '../Bedroom pic/Kitchen/Ceramic.jpg'
 import Lamp from '../Bedroom pic/Lamps.jpg'
 import Walla from '../Bedroom pic/Walla.jpg'
+import Chandilier from '../Bedroom pic/Kitchen/Chandilier.jpg'
+import Clock from '../Bedroom pic/Kitchen/Clock.jpg'
+import Center from '../Bedroom pic/Kitchen/Center.jpeg'
 export const product=[
      {
         id: 1,
@@ -88,5 +91,35 @@ export const product=[
         
         
       },
+      {
+          id: 9,
+          name: "chandelier",
+          price: 60000,
+          image: Chandilier,
+          
+          
+          
+          
+        },
+      {
+          id: 10,
+          name: "Wall clock",
+          price: 30000,
+          image: Clock,
+          
+          
+          
+          
+        },
+      {
+          id: 11,
+          name: "Center Table",
+          price: 30000,
+          image: Center,
+          
+          
+          
+          
+        },
 
 ]

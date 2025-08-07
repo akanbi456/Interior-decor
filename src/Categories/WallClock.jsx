@@ -1,0 +1,47 @@
+import React from 'react'
+import Navbar from '../component/Navbar'
+import { WallClocks } from '../data/WallClock'
+import { FaShoppingCart } from 'react-icons/fa'
+import { useCart } from '../context/CartContext'; 
+
+const WallClock = () => {
+    const { addToCart } = useCart();
+
+  return (
+    <div>
+      <Navbar/>
+       <div className="p-6 md:p-12">
+      <h1 className="mb-6 text-3xl font-bold text-center">Wall Clocks Collection</h1>
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {WallClocks.map((clock) => (
+          <div
+            key={clock.id}
+            className="overflow-hidden transition bg-white shadow-lg rounded-2xl hover:shadow-xl"
+          >
+            <img
+              src={clock.image}
+              alt={clock.name}
+              className="object-cover w-full h-56"
+            />
+            <div className="flex flex-col justify-between h-40 p-4">
+              <div>
+                <h2 className="text-lg font-semibold">{clock.name}</h2>
+                <p className="mt-1 text-gray-600">₦{clock.price.toLocaleString()}</p>
+              </div>
+              <button
+                onClick={() => addToCart(clock)}
+                className="flex items-center justify-center px-4 py-2 mt-4 text-white transition bg-black rounded-lg hover:bg-gray-800"
+              >
+                <FaShoppingCart className="mr-2" /> Add to Cart
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+</div>
+</div>
+  )
+}
+
+export default WallClock

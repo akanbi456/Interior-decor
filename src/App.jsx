@@ -8,10 +8,13 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Categories from "./Pages/Categories";
 import AdminPortal from "./component/AdminPortal";
-import LivingRoom from "./Categories/LivingRoom";
+import { ToastContainer } from "react-toastify";
+import WallClock from "./Categories/WallClock";
+import OrderConfirmation from "./Pages/OrderComfirmation";
 function App() {
   return (
     <>
+    <ToastContainer position="top-center" autoClose={3000} />
       <Router>
         <Routes>
                     <Route path="/" element={<Home/>} />
@@ -22,7 +25,8 @@ function App() {
                     <Route path="/contact" element={<Contact/>} />
                     <Route path="/catergory" element={<Categories/>} />
                     <Route path="/admin" element={<AdminPortal/>} />
-                    <Route path="/living-room" element={<LivingRoom/>} />
+                    <Route path="/clock" element={<WallClock/>} />
+                    <Route path="/confirmation" element={<OrderConfirmation/>} />
 
 
         </Routes>
