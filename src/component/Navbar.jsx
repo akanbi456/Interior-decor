@@ -55,13 +55,12 @@ const Navbar = () => {
                 />
               </div>
             </div>
-
-            {/* User Icon */}
-            <button className="p-2 rounded-full hover:bg-gray-100">
+<Link to='/dashboard'>
+ <button className="p-2 rounded-full hover:bg-gray-100">
               <FaUser className="w-5 h-5" />
-            </button>
+            </button></Link>
+           
 
-            {/* Cart Icon with badge */}
             <Link to="/cart" className="relative inline-block p-2 rounded-full hover:bg-gray-100">
               <FaShoppingCart className="w-5 h-5" />
               {cartItems > 0 && (
@@ -71,7 +70,6 @@ const Navbar = () => {
               )}
             </Link>
 
-            {/* Mobile Menu Toggle */}
             <button
               className="p-2 rounded-full md:hidden hover:bg-gray-100"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -81,7 +79,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Nav */}
         {isMenuOpen && (
           <div className="px-4 py-4 bg-white border-t md:hidden">
             <nav className="flex flex-col space-y-4">

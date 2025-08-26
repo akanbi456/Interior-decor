@@ -11,6 +11,9 @@ import AdminPortal from "./component/AdminPortal";
 import { ToastContainer } from "react-toastify";
 import WallClock from "./Categories/WallClock";
 import OrderConfirmation from "./Pages/OrderComfirmation";
+import Wallframe from "./Categories/Wallframe";
+import CenterTable from "./Categories/CenterTable";
+import Decors from "./Categories/Decors";
 function App() {
   return (
     <>
@@ -26,7 +29,10 @@ function App() {
                     <Route path="/catergory" element={<Categories/>} />
                     <Route path="/admin" element={<AdminPortal/>} />
                     <Route path="/clock" element={<WallClock/>} />
+                    <Route path="/frames" element={<Wallframe/>} />
+                    <Route path="/table" element={<CenterTable/>} />
                     <Route path="/confirmation" element={<OrderConfirmation/>} />
+                    <Route path="/decor" element={<Decors/>} />
 
 
         </Routes>

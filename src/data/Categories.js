@@ -1,15 +1,8 @@
 export const Categories= [
+  
     {
-        name:"Anchor",
-        Link :'/ancor'
-    },
-    {
-        name:"Wine holder",
-        Link :'/wine'
-    },
-    {
-        name:"Kaws & German",
-        Link :'/kaw'
+        name:"Decors",
+        Link :'/decor'
     },
     {
         name: "Dancing couple",

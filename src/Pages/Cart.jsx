@@ -26,7 +26,7 @@ const Cart = () => {
                 <div className="flex-1">
                   <h3 className="text-lg font-semibold">{item.name}</h3>
                   <p className="text-sm text-gray-300">
-                    Color: {item.color || ''} &nbsp; Size: {item.size || 'Standard'}
+                    {/* Color: {item.color || ''} &nbsp; Size: {item.size || 'Standard'} */}
                   </p>
                   <p className="mt-2 text-xl font-bold">₦{item.price}</p>
                 </div>
