@@ -1,18 +1,16 @@
 import React from 'react'
-
 import { FaShoppingCart } from 'react-icons/fa'
-import { useCart } from '../context/CartContext'; 
-import { useNavigate } from 'react-router-dom';
-import { Decor } from '../data/Decor';
-import { Wineholder } from '../data/Wineholder';
+import { useCart } from '../context/CartContext' 
+import { useNavigate } from 'react-router-dom'
+import { Decor } from '../data/Decor'
+import { Wineholder } from '../data/Wineholder'
 
 const Decors = () => {
-  const { addToCart } = useCart();
-  const navigate = useNavigate(); 
+  const { addToCart } = useCart()
+  const navigate = useNavigate() 
 
   return (
     <div>
-      
       <div className="p-6 md:p-12">
         <button
           onClick={() => navigate('/shop')}
@@ -22,9 +20,9 @@ const Decors = () => {
         </button>
       </div>
 
-      <h1 className="mb-6 text-3xl font-bold text-center"> Decors Collection</h1>
-      
-      <div className="grid grid-cols-1 gap-8 p-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      {/* Decor Section */}
+      <h1 className="mb-6 text-3xl font-bold text-center">Decors Collection</h1>
+      <div className="grid grid-cols-2 gap-8 p-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {Decor.map((decor) => (
           <div
             key={decor.id}
@@ -52,9 +50,11 @@ const Decors = () => {
           </div>
         ))}
       </div>
-       <h1 className="mb-6 text-3xl font-bold text-center"> Wine Holder Collection</h1>
-      <div className="grid grid-cols-1 gap-8 p-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-         {Wineholder    .map((decor) => (
+
+      {/* Wine Holder Section */}
+      <h1 className="mb-6 text-3xl font-bold text-center">Wine Holder Collection</h1>
+      <div className="grid grid-cols-2 gap-8 p-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {Wineholder.map((decor) => (
           <div
             key={decor.id}
             className="overflow-hidden transition bg-white shadow-lg rounded-2xl hover:shadow-xl"
