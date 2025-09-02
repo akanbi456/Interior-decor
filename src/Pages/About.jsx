@@ -12,11 +12,7 @@ const About = () => {
       <Navabr/>
     <section className="relative overflow-hidden text-white bg-slate-900">
       <div className="absolute inset-0">
-        {/* <img
-          src="/placeholder.svg?height=600&width=1200&text=Beautiful+Interior+Design+Studio"
-          alt="Interior Design Studio"
-          className="object-cover w-full h-full opacity-40"
-        /> */}
+        
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 to-slate-900/40">
         </div>
       </div>
